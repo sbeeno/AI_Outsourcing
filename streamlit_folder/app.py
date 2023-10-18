@@ -4,6 +4,8 @@ import sys
 import os
 import pickle
 from io import StringIO
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 # 'streamlit_folder' 폴더의 실제 경로를 계산합니다.
 #open(r'C:\Users\user\OneDrive\바탕 화면\AI_Outsourcing\streamlit_folder\custom.css')
