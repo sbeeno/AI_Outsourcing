@@ -81,7 +81,7 @@ st.markdown("""
 
 st.title('GUESS WHO') 
 
-streamlit_folder_path = os.path.abspath(os.path.join('C:/Users/user/OneDrive/바탕 화면/AI_Outsourcing', 'streamlit_folder'))
+streamlit_folder_path = os.path.abspath(os.path.join('../../AI_Outsourcing', 'streamlit_folder'))
 
 # 'streamlit_folder' 폴더의 경로를 Python 경로에 추가합니다.
 if streamlit_folder_path not in sys.path:
@@ -94,7 +94,7 @@ uploaded_file = st.file_uploader('file upload', type=['csv'])
 
 def main():
     
-    with open('C:/Users/user/OneDrive/바탕 화면/AI_Outsourcing/streamlit_folder/model.pkl', 'rb') as f: 
+    with open('streamlit_folder\model.pkl', 'rb') as f: 
         model = pickle.load(f) 
     print("-------------------")
     print(model) 
