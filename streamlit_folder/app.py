@@ -94,7 +94,7 @@ uploaded_file = st.file_uploader('file upload', type=['csv'])
 
 def main():
     
-    with open('\model.pkl', 'rb') as f: 
+    with open('model.pkl', 'rb') as f: 
         model = pickle.load(f) 
     print("-------------------")
     print(model) 
